@@ -31,4 +31,29 @@ const myFunction = function () {
     console.log("Hello World");
 }
 
-console.log(typeof myFunction === "function");  
+// console.log(typeof myFunction === "function");  
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive Data Types), Heap(Non Primitive Data Types).
+
+let myname = "Mahendra Tekude";
+let myAge = 30;
+let myAnotherName = myname;
+myAnotherName="Mahendra";
+
+console.log(`My name is ${myname}`);
+console.log(`my Another name is ${myAnotherName}`);
+
+const user1 = {
+    name: "John",
+    age: 30,
+    isLoggedIn: true,
+    email: "<EMAIL>"
+}
+const user2 = user1;
+user2.name = "Mahendra";
+console.log(user1.name);
+console.log(user2.name);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
