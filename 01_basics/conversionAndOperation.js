@@ -56,4 +56,32 @@ let negitiveValue=-value;
 let str ="Mahendra";
 let str1="Hello";
 let str2=str1+str;
-console.log(str2);
+// console.log(str2);
+
+// console.log("1"+ 2);
+// console.log(1+ "2");
+// console.log("1"+ 2 + 2);
+// console.log(1+2+"2");
+// console.log((3+4)*5%3);
+
+//12
+12
+122
+32
+2
+
+//console.log(+true);   //1
+// console.log(+"");  //0
+
+
+let num1,num2,num3=4;
+num1=num2=num3=10;
+
+let gameCounter=100;
+gameCounter++;
+console.log(gameCounter);
+++gameCounter;
+console.log(gameCounter);
+
+//Link to Study 
+https://tc39.es/
