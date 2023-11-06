@@ -1,59 +1,33 @@
-//array
+const marvel_heroes = ["Thor", "Luke", "Han", "Leia"];
+const dc_heroes = ["superman", "captain", "iron man", "hulk", "wizard"];
 
-let myArray = [1,2,3,4,5,6,7,8,9,10];
-console.log(myArray);
-console.log(myArray.length);
-console.log(myArray[0]);
-console.log(myArray[1]);
-console.log(myArray[myArray.length-1]);
-//Array Methods
+// marvel_heroes.push(...dc_heroes);
+const all_Heroes=marvel_heroes.concat(...dc_heroes);
 
-myArray.push(100);      //add element to the end of the array
-console.log(myArray);
+console.log(all_Heroes);
 
-myArray.unshift(100);    //add element to the beginning of the array
-console.log(myArray);
+const all_NewHeroes= [...marvel_heroes,...dc_heroes];
+console.log(all_NewHeroes);
 
-myArray.shift(); //remove element to the beginning of the
-console.log(myArray);
+const all_NewHeroes2= [...marvel_heroes,...dc_heroes];
+console.log(all_NewHeroes2);
 
-myArray.pop(); //remove element to the end of the array
-console.log(myArray);
+const anotherArray=[1,2,3,4,[5,6],[7,[8,9],10]];
 
-myArray.reverse(); //reverse the order of the array
-console.log(myArray);
-
-myArray.sort(); //sort the array in ascending order
-console.log(myArray);
-
-myArray.splice(2,1); //remove element at index 2
-console.log(myArray);
-
-myArray.includes(100); //check if the element is present in the array
-console.log(myArray.includes(100));
-
-myArray.indexOf(100); //find the index of the element
-console.log(myArray.indexOf(100));
-
-myArray.lastIndexOf(100); //find the last index of the element in the array
-console.log(myArray.lastIndexOf(100));
-
-const newArray = myArray.join();
-console.log(newArray);
+const anotherArray2= anotherArray.flat(Infinity);
+console.log(anotherArray2);
 
 
-//diffrence between slice ,splice
-const myArray1= [1,2,3,4,5,6,7,8];
-console.log(`slice Method used\nA : ${myArray1}`);
+//INTERESTING  ARRAY
+console.log(Array.isArray("Mahendra"));
+console.log(Array.from("Mahendra"));
+console.log(Array.of("Mahendra"));
+console.log(Array.from({name: "Mahendra"}));
+console.log(Array.of({name: "Mahendra"}));
 
-const nArray = myArray1.slice(1,5);
-console.log(`slice Method used\n a : ${nArray}`);
-
-console.log(`B : ${myArray1}`);
-
-const mArray = myArray1.splice(1,5);
-console.log(`slice Method used\n b : ${mArray}`);
-
-console.log(`C : ${myArray1}`);
+const score=100 
+const score2=200;
+const score3=300;
+console.log(Array.of(score,score2,score3));
 
 
