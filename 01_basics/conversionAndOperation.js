@@ -1,15 +1,17 @@
+//========================Conversions=================
+
 let score="33";
 
-console.log(typeof score); // OR  console.log(typeof(score));
+//console.log(typeof score); // OR  console.log(typeof(score));
 
 let valueInNumber=Number(score);
-console.log(valueInNumber);
-console.log(typeof valueInNumber);
+//console.log(typeof valueInNumber);
+//console.log(valueInNumber);
 
 
 let s=null;
 
-console.log(typeof s);
+// console.log(typeof s);
 
 
 //"33"=> 33 easily convert into number 
@@ -22,7 +24,7 @@ let isLoggedIn="abc"
 //let isLoggedIn=0;
 let itsBoolean=Boolean(isLoggedIn);
 
-console.log(typeof itsBoolean);
+// console.log(typeof itsBoolean);
 
 //1=> true/ 0=> false;
 //"" => false
@@ -31,7 +33,27 @@ console.log(typeof itsBoolean);
 //convert number to String
 
 let numberValue= 23;
-console.log("The type of ${numberValue} is:"+ typeof numberValue);
+//console.log("The type of ${numberValue} is:"+ typeof numberValue);
 
 let isString= String(numberValue);
-console.log( "The type of ${numberValue} is:"+ typeof isString);
+//console.log( "The type of ${numberValue} is:"+ typeof isString);
+
+
+
+//===============OPerations=========================
+
+let value=3;
+let negitiveValue=-value;
+
+// console.log(2+3);
+// console.log(3-2);
+// console.log(3*3);
+// console.log(3**3);
+// console.log(9/3);
+// console.log(2%3);
+
+
+let str ="Mahendra";
+let str1="Hello";
+let str2=str1+str;
+console.log(str2);
