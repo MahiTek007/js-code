@@ -18,7 +18,7 @@ const anotherArray2= anotherArray.flat(Infinity);
 console.log(anotherArray2);
 
 
-//INTERESTING  ARRAY
+//INTERESTING  ARRAY  to cerate array
 console.log(Array.isArray("Mahendra"));
 console.log(Array.from("Mahendra"));
 console.log(Array.of("Mahendra"));
