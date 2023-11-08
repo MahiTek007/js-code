@@ -90,3 +90,93 @@ console.log(Object.isSealed(newApp));
 // Object.isFrozen
 
 console.log(Object.isFrozen(newApp));
+
+/*   =================OUTPUT=====================================
+ * Object.prototypeWelcome user Mahendra
+My full name is Mahendra Jalindar Tekude
+Mahendra Jalindar Tekude
+My age is 25
+My email is ychag@example.com
+My city is Bangalore
+My country is India
+My loginLastedTime is Monday,Saturday,Sunday
+My Symbol(Department Number) is 100
+[
+  'name',
+  'full_name',
+  'age',
+  'email',
+  'city',
+  'country',
+  'loginLastedTime'
+]
+[
+  'Mahendra',
+  'Mahendra Jalindar Tekude',
+  25,
+  'ychag@example.com',
+  'Bangalore',
+  'India',
+  [ 'Monday', 'Saturday', 'Sunday' ]
+]
+[
+  [ 'name', 'Mahendra' ],
+  [ 'full_name', 'Mahendra Jalindar Tekude' ],
+  [ 'age', 25 ],
+  [ 'email', 'ychag@example.com' ],
+  [ 'city', 'Bangalore' ],
+  [ 'country', 'India' ],
+  [ 'loginLastedTime', [ 'Monday', 'Saturday', 'Sunday' ] ]
+]
+{
+  name: 'Mahendra',
+  full_name: 'Mahendra Jalindar Tekude',
+  age: 25,
+  email: 'ychag@example.com',
+  city: 'Bangalore',
+  country: 'India',
+  loginLastedTime: [ 'Monday', 'Saturday', 'Sunday' ],
+  [Symbol(Department Number)]: 100
+}
+{
+  name: 'Mahendra',
+  full_name: 'Mahendra Jalindar Tekude',
+  age: 25,
+  email: 'ychag@example.com',
+  city: 'Bangalore',
+  country: 'India',
+  loginLastedTime: [ 'Monday', 'Saturday', 'Sunday' ],
+  [Symbol(Department Number)]: 100
+}
+{
+  name: 'Mahendra',
+  full_name: 'Mahendra Jalindar Tekude',
+  age: 25,
+  email: 'ychag@example.com',
+  city: 'Bangalore',
+  country: 'India',
+  loginLastedTime: [ 'Monday', 'Saturday', 'Sunday' ],
+  [Symbol(Department Number)]: 100
+}
+false
+false
+false
+{
+  value: 'Mahendra',
+  writable: false,
+  enumerable: true,
+  configurable: false
+}
+[
+  'name',
+  'full_name',
+  'age',
+  'email',
+  'city',
+  'country',
+  'loginLastedTime'
+]
+[ Symbol(Department Number) ]
+true
+true
+ */
