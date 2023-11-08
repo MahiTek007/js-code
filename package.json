@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@inquirer/prompts": "^3.3.0"
+  }
+}
