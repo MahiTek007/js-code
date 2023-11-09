@@ -99,7 +99,14 @@ console.log(`result is ${result1} and result2 is ${result2}`);
     result2=13;
     After the execution of the function, delete the execution thread and return the result
 
+ ========================================Stack=========================================================
 
+                            
+                                            |           |
+             1) result1=add(val1,val2);     |add(v1,v2) |<=======function execution point
+                                            |___________|
+             2) result1=add(10,3);          | GEC       |
+                                            |-----------|
 */
 
 let num1=10;
@@ -201,6 +208,8 @@ console.log(`result1 is ${a} and result2 is ${b}`);
         a=result1;
         b=result2;
 
-        result1 is ${a} and result2 is ${b} 
+       result1 is ${a} and result2 is ${b} 
+
+       ========================================Stack=========================================================
 
 */
