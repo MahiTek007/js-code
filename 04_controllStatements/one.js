@@ -109,4 +109,45 @@ switch(month){
         console.log(`Invalid Month`);
         break;
     }
+
+    // falsy values are ===> false,0,-0, Bigint 0n,"",NaN,null,undefined
+
+    // truthy values are ===> true," ",false",'0',[],{},()=>{},function(){}
+
 }
+
+// let userEmail = "kenaa@example.com";
+
+let userEmail = [];
+if(userEmail.length===0){
+    // console.log("Array is empty");
+}
+
+
+const user ={};
+
+if (Object.keys(user).length === 0) {
+    console.log(
+        "Object is empty",
+    );
+}
+
+// Nullish Coalescing Operators (??): null,undefined
+
+let val1;
+val1=5??10;
+console.log(val1);
+val1=null??10;
+console.log(val1);
+val1=undefined??10;
+console.log(val1);
+val1=null??10??20;
+
+console.log(val1);
+
+//Ternary Operators: 
+
+// condition? true: false;
+
+const iceTeaPrice=100;
+iceTeaPrice<=80?console.log(`ice tea price is ${iceTeaPrice}`):console.log(`ice tea price is not enough to`);
