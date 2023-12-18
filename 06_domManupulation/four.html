@@ -13,8 +13,63 @@
     body.style.backgroundColor ='gray';
     body.style.color="white";
 
-    function addLanguages() {
+    const div = document.createElement('div');
+    div.className='.container';
+   
 
+    const ul=document.createElement('ul');
+    ul.className='ul';
+    div.appendChild(ul);
+
+    const li= document.createElement('li');
+    li.className='.li';
+
+    const programmingLanguages=["javascript","Java","python","PHP"];
+    const colors=["blue","red","green","yellow",];
+    
+    programmingLanguages.forEach(element => {
+        const li= document.createElement('li');
+        li.className='li';
+        li.innerText=`${element}`;
+        ul.appendChild(li);
+    });
+
+    document.body.appendChild(div);
+    
+    const classli = document.querySelectorAll('.li');
+    for (let i = 0; i < classli.length; i++) {
+        classli[i].style.backgroundColor = colors[i];
+        classli[i].style.textAlign = 'center';
     }
+
+    function addLanguage(language) {
+        const li = document.createElement('li');
+        li.innerText=`${language}`;
+        document.querySelector('.ul').appendChild(li).style.color="#fff01d";
+    }
+    addLanguage('Ruby');
+
+    function addOptimizeLanguage(language) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(language));
+        document.querySelector('.ul').appendChild(li);
+    }
+    addOptimizeLanguage('typescript');
+
+
+    //Edit the language
+
+    const secondLang=document.querySelector("li:nth-child(2)");
+    const newLi= document.createElement("li");
+    newLi.textContent="MOJO language";
+    secondLang.replaceWith(newLi);
+
+    const firstLang= document.querySelector("li:first-child");
+    firstLang.outerHTML = "<li>ASP</li>"
+
+    //remove
+
+    const lastLang= document.querySelector("li:last-child");
+    // lastLang.remove();
  </script>
 </html>
